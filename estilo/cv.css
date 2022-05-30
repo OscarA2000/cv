@@ -1,0 +1,28 @@
+body{
+    background: url(error.png) ;
+    background-size: cover ;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    background: red;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.menu li a:hover{
+    background: purple;
+}
+.menu a{
+    color: white;
+}

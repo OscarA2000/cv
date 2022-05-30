@@ -1,0 +1,11 @@
+h1
+{
+    color: red;
+}
+a{
+    color: blueviolet;
+    font-size: 50px;
+}
+body{
+    background-image: url(error.png);
+}
