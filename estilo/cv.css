@@ -1,28 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background: url(error.png) ;
-    background-size: cover ;
+    font-family: 'PT Sans' , sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(data:image/jpeg;base64,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);
+    background-size: cover;
+    background-position: center;
+}
+.nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    transition: all 0.5s ease;
+}
+.nav.active{
+    background: blueviolet;
+    padding: 15px;
+}
+.nav.active .logo,
+.nav.active a{
+    color: black;
+}
+.nav.active a:hover{
+    background: white;
+    color:black
+}
+.logo{
+    font-size: 25px;
+    color: blueviolet;
+    font-weight: 100;
 }
 .menu{
-    list-style: none;
-    padding: 0;
-    background: red;
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-}
-.menu li a{
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-    display: block;
+    display: flex;
 }
 .menu li{
-    display: inline-block;
-    text-align: center;
+    list-style: none;
+    margin: 10px;
+}
+.menu li a{
+    color: blueviolet;
+    text-decoration: none;
+    font-weight: bold;
 }
 .menu li a:hover{
-    background: purple;
-}
-.menu a{
-    color: white;
+    padding: 5px 10px;
+    background: white;
+    color: black;
+    border-radius: 15px;
 }
